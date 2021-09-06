@@ -6,18 +6,15 @@ using System.Threading.Tasks;
 
 namespace QuiltConsoleApp
 {
-   
 
-    abstract class Shape
+
+    public abstract class Shape
     {
-        public string color;
-        public string name;
-
-        public getArea();
-    }
-
-
-   
-
-   
+        public string Color;
+        public string Name;
+        public string GetArea()
+        {
+            return ($"{Color } {Name } with an area of {GetArea()}");
+        }
+    }  
 }

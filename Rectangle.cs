@@ -8,19 +8,18 @@ namespace QuiltConsoleApp
 {
     public class Rectangle : Shape
     {
-        public int length;
-        public int width;
+        public double length;
+        public double width;
        
-
-        public Rectangle(string color, int length, int width)
+        public Rectangle(string color, double rectangleLength, double rectangleWidth)
         {
-            name = "Rectangle";
-            color = color;
-            length = length;
-            width = width;
+            Name = "Rectangle";
+            length = rectangleLength;
+            width = rectangleWidth;
+            Color = color;
         }
 
-        public int GetArea()
+        public override double GetArea()
         {
             return length * width;
         }

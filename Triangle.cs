@@ -14,14 +14,14 @@ namespace QuiltConsoleApp
 
         public Triangle(string color, int side)
         {
-            name = "Triangle";
-            Shape.color = color;
+            Name = "Triangle";
+            Color = color;
             side1 = side;
             side2 = side;
             side3 = side;
         }
 
-        public int GetArea()
+        public override double GetArea()
         {
             int s = (side1 + side2 + side3) / 2;
             int x = s - side1;

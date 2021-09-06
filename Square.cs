@@ -10,16 +10,13 @@ namespace QuiltConsoleApp
     {
         public int length;
 
-        public Square(string color, int length)
+        public Square(string color, int squareLength)
         {
-            name = "Square";
-            Shape.color = color;
-            length = length;
+            Name = "Square";
+            Color = color;
+            length = squareLength;
         }
 
-        public int GetArea()
-        {
-            return length * length;
-        }
+        public double Area => length * length;
     }
 }
