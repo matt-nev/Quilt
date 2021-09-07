@@ -11,7 +11,7 @@
             length = squareLength;
         }
 
-        public int GetArea()
+        public double GetArea()
         {
             return length * length;
 

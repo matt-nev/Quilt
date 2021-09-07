@@ -13,7 +13,7 @@
             Color = color;
         }
 
-        public override double GetArea()
+        public double GetArea()
         {
             return length * width;
         }

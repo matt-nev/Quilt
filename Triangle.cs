@@ -8,13 +8,13 @@ namespace QuiltConsoleApp
         public int side2;
         public int side3;
 
-        public Triangle(string color, int side)
+        public Triangle(string color, int Tside1, int Tside2, int Tside3)
         {
             Name = "Triangle";
             Color = color;
-            side1 = side;
-            side2 = side;
-            side3 = side;
+            side1 = Tside1;
+            side2 = Tside2;
+            side3 = Tside3;
         }
 
         public double GetArea()

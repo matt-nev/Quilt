@@ -54,7 +54,7 @@ namespace QuiltConsoleApp
                         break;
 
                     case "T":
-                        Console.WriteLine("You chose Trinagle");
+                        Console.WriteLine("You chose Triangle");
                         Console.WriteLine("Please select a color");
                         Convert.ToString(Console.ReadLine());
                         Console.WriteLine("Enter the length of the first side: ");
@@ -63,9 +63,9 @@ namespace QuiltConsoleApp
                         Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Enter the length of the third side: ");
                         Convert.ToInt32(Console.ReadLine());
-                        Triangle trinagle = new Triangle(color, side1, side2, side3);
+                        Triangle triangle = new Triangle(color, side1, side2, side3);
                         triangle.GetArea();
-                        shapes.Add(trinagle);
+                        shapes.Add(triangle);
                         break;
 
                     case "L":
