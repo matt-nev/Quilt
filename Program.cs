@@ -30,7 +30,7 @@ namespace QuiltConsoleApp
                 switch (Console.ReadLine()) 
                 {
                     case "S":
-                        Console.WriteLine("You chose Square");
+                        Console.WriteLine("You chose square");
                         Console.WriteLine("Please select a color");
                         Convert.ToString(Console.ReadLine());
                         Console.WriteLine("Enter the length of the sides: ");
@@ -42,7 +42,7 @@ namespace QuiltConsoleApp
                         break;
 
                     case "R":
-                        Console.WriteLine("You chose Rectangle");
+                        Console.WriteLine("You chose rectangle");
                         Console.WriteLine("Please select a color");
                         Convert.ToString(Console.ReadLine());
                         Console.WriteLine("Enter the length of the sides: ");
@@ -52,10 +52,11 @@ namespace QuiltConsoleApp
                         Rectangle rectangle = new Rectangle(color, length, width);
                         rectangle.GetArea();
                         shapes.Add(rectangle);
+                        Console.WriteLine("You Added a rectangle");
                         break;
 
                     case "T":
-                        Console.WriteLine("You chose Triangle");
+                        Console.WriteLine("You chose triangle");
                         Console.WriteLine("Please select a color");
                         Convert.ToString(Console.ReadLine());
                         Console.WriteLine("Enter the length of the first side: ");
@@ -67,6 +68,7 @@ namespace QuiltConsoleApp
                         Triangle triangle = new Triangle(color, side1, side2, side3);
                         triangle.GetArea();
                         shapes.Add(triangle);
+                        Console.WriteLine("You added a triangle");
                         break;
 
                     case "L":
