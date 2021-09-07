@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QuiltConsoleApp
 {
@@ -21,7 +17,7 @@ namespace QuiltConsoleApp
             side3 = side;
         }
 
-        public override double GetArea()
+        public double GetArea()
         {
             int s = (side1 + side2 + side3) / 2;
             int x = s - side1;

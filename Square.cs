@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace QuiltConsoleApp
+﻿namespace QuiltConsoleApp
 {
     public class Square : Shape
     {
@@ -17,6 +11,11 @@ namespace QuiltConsoleApp
             length = squareLength;
         }
 
-        public double Area => length * length;
+        public int GetArea()
+        {
+            return length * length;
+
+            // public double Area => length * length;
+        }
     }
 }
