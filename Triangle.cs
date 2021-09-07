@@ -17,7 +17,7 @@ namespace QuiltConsoleApp
             side3 = Tside3;
         }
 
-        public double GetArea()
+        public override int GetArea()
         {
             int s = (side1 + side2 + side3) / 2;
             int x = s - side1;
@@ -28,4 +28,5 @@ namespace QuiltConsoleApp
             return answer;
         }
     }
+
 }

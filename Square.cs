@@ -11,11 +11,10 @@
             length = squareLength;
         }
 
-        public double GetArea()
+        public override int GetArea()
         {
             return length * length;
-
-            // public double Area => length * length;
         }
     }
+
 }

@@ -2,10 +2,10 @@
 {
     public class Rectangle : Shape
     {
-        public double length;
-        public double width;
+        public int length;
+        public int width;
 
-        public Rectangle(string color, double rectangleLength, double rectangleWidth)
+        public Rectangle(string color, int rectangleLength, int rectangleWidth)
         {
             Name = "Rectangle";
             length = rectangleLength;
@@ -13,9 +13,10 @@
             Color = color;
         }
 
-        public double GetArea()
+        public override int GetArea()
         {
             return length * width;
         }
     }
+
 }
