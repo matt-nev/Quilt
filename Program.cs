@@ -38,6 +38,7 @@ namespace QuiltConsoleApp
                         Square square = new Square(color, length);
                         square.GetArea();
                         shapes.Add(square);
+                        Console.WriteLine("You added a square");
                         break;
 
                     case "R":
